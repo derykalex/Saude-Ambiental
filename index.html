@@ -1,0 +1,286 @@
+<!-- Top Bar / Header de Apresentação -->
+<header class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex items-center justify-between shrink-0 z-20">
+    <div class="flex items-center space-x-3">
+        <div class="bg-forest-600 text-white p-2 rounded-xl shadow-md flex items-center justify-center">
+            <i class="fa-solid fa-leaf text-base"></i>
+        </div>
+        <div>
+            <span class="text-base font-bold tracking-tight text-white block">Saúde Ambiental</span>
+            <span class="text-xs text-slate-400">Apresentação Interativa & Sustentabilidade</span>
+        </div>
+    </div>
+    <!-- Indicador de progresso numérico -->
+    <div class="bg-slate-800 border border-slate-700 px-4 py-1.5 rounded-full text-xs font-semibold text-slate-300">
+        Slide <span id="current-slide-num" class="text-forest-400">1</span> de <span id="total-slides-num">6</span>
+    </div>
+</header>
+
+<!-- Container Principal dos Slides -->
+<main class="relative flex-1 flex items-center justify-center px-4 sm:px-8 lg:px-16 overflow-hidden">
+    
+    <!-- SLIDE 1: Capa (O que é Saúde Ambiental) -->
+    <div class="slide active w-full max-w-5xl flex-col justify-center items-center text-center space-y-6" data-slide="1">
+        <div class="inline-flex items-center space-x-2 bg-forest-900/60 border border-forest-500/40 text-forest-300 text-xs font-semibold px-4 py-2 rounded-full shadow-sm">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Ecologia, Bem-Estar e Qualidade de Vida</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+            Saúde <span class="text-forest-500">Ambiental</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            O campo da saúde pública dedicado a avaliar, corrigir e controlar os fatores do meio físico, químico e biológico que podem exercer efeitos nocivos sobre a saúde humana e o equilíbrio ecológico.
+        </p>
+        <div class="pt-4 flex items-center justify-center space-x-6 text-xs text-slate-400 font-medium">
+            <span class="flex items-center"><i class="fa-solid fa-circle text-forest-500 text-[6px] mr-2"></i> Prevenção e Qualidade de Vida</span>
+            <span class="flex items-center"><i class="fa-solid fa-circle text-forest-500 text-[6px] mr-2"></i> Sustentabilidade Global</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: Conceitos Chave e Desafios Globais -->
+    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="2">
+        <div class="text-center max-w-2xl mx-auto">
+            <span class="text-forest-400 text-xs font-bold tracking-widest uppercase bg-forest-900/60 px-3 py-1 rounded-full border border-forest-500/30">Fundamentos e Contexto</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Conceitos Chave e Desafios Globais</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 bg-forest-900/80 text-forest-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Saúde Única (One Health)</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Reconhece que a saúde humana, a saúde animal e os ecossistemas são indissociáveis. O desequilíbrio em um gera crises nos demais.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Crise Hídrica & Saneamento</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    A escassez de água potável e a ausência de saneamento adequado continuam alimentando surtos de doenças infecciosas em populações vulneráveis.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 bg-rose-500/20 text-rose-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-smog"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Poluição Atmosférica</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Gases industriais e material particulado afetam diretamente o sistema respiratório e cardiovascular de bilhões de habitantes urbanos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: O Papel Crucial dos Profissionais da Saúde -->
+    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="3">
+        <div class="text-center max-w-2xl mx-auto">
+            <span class="text-eco-light text-xs font-bold tracking-widest uppercase bg-sky-950/60 px-3 py-1 rounded-full border border-sky-500/30">Atuação Humana e Comunitária</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">O Papel Crucial dos Profissionais da Saúde</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 bg-sky-500/20 text-sky-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-user-nurse"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Atuação Comunitária</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Profissionais de ponta orientam famílias sobre hábitos de higiene, armazenamento seguro de água e descarte correto de resíduos domésticos.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 bg-amber-500/20 text-amber-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Vigilância Epidemiológica</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Monitoram surtos de doenças transmitidas por vetores (como dengue, zika e febre amarela) associadas a mudanças climáticas e acúmulo de água.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 bg-forest-900 text-forest-400 rounded-2xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Agentes Comunitários (ACS / ACE)</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    O elo vital entre a ciência sanitária e os domicílios, identificando riscos ambientais locais e promovendo saúde preventiva de base.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: O Marco Global: COP30 e COP31 -->
+    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="4">
+        <div class="text-center max-w-2xl mx-auto">
+            <span class="text-amber-400 text-xs font-bold tracking-widest uppercase bg-amber-950/60 px-3 py-1 rounded-full border border-amber-500/30">Diplomacia Climática Global</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">O Marco Global: COP30 e COP31</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-slate-800/80 border border-forest-500/40 p-6 rounded-3xl space-y-3 relative overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 text-forest-900/40 text-8xl font-black pointer-events-none">30</div>
+                <div class="inline-flex items-center space-x-2 bg-forest-900 text-forest-300 text-xs font-bold px-3 py-1 rounded-lg">
+                    <i class="fa-solid fa-location-dot"></i> Belém do Pará, Brasil (2025)
+                </div>
+                <h3 class="text-xl font-bold text-white">COP30: O Clímax na Amazônia</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Realizada no coração da floresta amazônica, a COP30 colocou os povos originários, a bioeconomia, a conservação de florestas e a justiça climática no centro das negociações globais, exigindo metas concretas de transição energética.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-sky-500/40 p-6 rounded-3xl space-y-3 relative overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 text-sky-900/40 text-8xl font-black pointer-events-none">31</div>
+                <div class="inline-flex items-center space-x-2 bg-sky-950 text-sky-300 text-xs font-bold px-3 py-1 rounded-lg">
+                    <i class="fa-solid fa-flag"></i> Desdobramentos e Ação Global
+                </div>
+                <h3 class="text-xl font-bold text-white">COP31: Aceleração e Financiamento</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Focada na implementação prática dos compromissos assumidos, consolidando mecanismos de financiamento verde internacional para apoiar nações em desenvolvimento na mitigação de desastres e adaptação sanitária.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: Ações Práticas e Sustentabilidade -->
+    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="5">
+        <div class="text-center max-w-2xl mx-auto">
+            <span class="text-forest-400 text-xs font-bold tracking-widest uppercase bg-forest-900/60 px-3 py-1 rounded-full border border-forest-500/30">Caminhos Práticos</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Ações Práticas e Sustentabilidade</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-10 h-10 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center font-bold text-sm">01</div>
+                <h3 class="text-base font-bold text-white">Transição Energética</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Incentivo a fontes limpas e renováveis (solar e eólica) para reduzir a poluição do ar e mitigar o aquecimento global.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-10 h-10 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center font-bold text-sm">02</div>
+                <h3 class="text-base font-bold text-white">Saneamento Universal</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Garantir tratamento de esgoto e água tratada para todas as comunidades como pilar fundamental de saúde pública.
+                </p>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
+                <div class="w-10 h-10 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center font-bold text-sm">03</div>
+                <h3 class="text-base font-bold text-white">Consumo Consciente</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Prática de reciclagem, redução de plásticos descartáveis, apoio à agricultura local e conservação de recursos naturais.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: Conclusão -->
+    <div class="slide w-full max-w-5xl flex-col justify-center items-center text-center space-y-6" data-slide="6">
+        <div class="w-16 h-16 bg-forest-600 text-white rounded-3xl flex items-center justify-center text-3xl shadow-xl shadow-forest-600/30">
+            <i class="fa-solid fa-flag-checkered"></i>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            O Futuro Está em <span class="text-forest-500">Nossas Mãos</span>
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            Cuidar da saúde ambiental é proteger a humanidade. Com a união de políticas globais (como as diretrizes da COP), atuação firme dos profissionais de saúde e engajamento comunitário, podemos garantir um planeta próspero para as próximas gerações.
+        </p>
+        <div class="pt-2 flex flex-wrap justify-center gap-4">
+            <button onclick="goToSlide(1)" class="bg-forest-600 hover:bg-forest-700 text-white font-semibold px-6 py-3 rounded-2xl transition-all shadow-lg text-sm flex items-center space-x-2">
+                <i class="fa-solid fa-rotate-right"></i>
+                <span>Reiniciar Apresentação</span>
+            </button>
+        </div>
+    </div>
+
+</main>
+
+<!-- Rodapé de Navegação da Apresentação -->
+<footer class="bg-slate-900/90 border-t border-slate-800 px-6 py-4 flex items-center justify-between shrink-0 z-20">
+    <button id="prev-btn" onclick="changeSlide(-1)" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold px-5 py-2.5 rounded-xl border border-slate-700 text-sm transition-all flex items-center space-x-2 disabled:opacity-40 disabled:cursor-not-allowed">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span class="hidden sm:inline">Anterior</span>
+    </button>
+
+    <!-- Indicadores de pontos de slides -->
+    <div id="slide-dots" class="flex items-center space-x-2">
+        <!-- Gerado via JS -->
+    </div>
+
+    <button id="next-btn" onclick="changeSlide(1)" class="bg-forest-600 hover:bg-forest-700 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-all flex items-center space-x-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-md shadow-forest-600/20">
+        <span class="hidden sm:inline">Próximo</span>
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+</footer>
+
+<!-- Script de Controle da Apresentação -->
+<script>
+    let currentSlide = 1;
+    const totalSlides = 6;
+
+    const slides = document.querySelectorAll('.slide');
+    const currentSlideNum = document.getElementById('current-slide-num');
+    const totalSlidesNum = document.getElementById('total-slides-num');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const slideDotsContainer = document.getElementById('slide-dots');
+
+    totalSlidesNum.textContent = totalSlides;
+
+    // Criar pontos indicadores
+    for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-3 h-3 rounded-full transition-all ${i === 1 ? 'bg-forest-500 w-8' : 'bg-slate-700 hover:bg-slate-600'}`;
+        dot.onclick = () => goToSlide(i);
+        slideDotsContainer.appendChild(dot);
+    }
+
+    function updateSlideView() {
+        slides.forEach((slide, index) => {
+            if (index + 1 === currentSlide) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+
+        currentSlideNum.textContent = currentSlide;
+
+        // Atualizar botões
+        prevBtn.disabled = currentSlide === 1;
+        nextBtn.disabled = currentSlide === totalSlides;
+
+        // Atualizar pontos
+        const dots = slideDotsContainer.children;
+        for (let i = 0; i < dots.length; i++) {
+            if (i + 1 === currentSlide) {
+                dots[i].className = 'w-8 h-3 rounded-full bg-forest-500 transition-all';
+            } else {
+                dots[i].className = 'w-3 h-3 rounded-full bg-slate-700 hover:bg-slate-600 transition-all';
+            }
+        }
+    }
+
+    function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide < 1) currentSlide = 1;
+        if (currentSlide > totalSlides) currentSlide = totalSlides;
+        updateSlideView();
+    }
+
+    function goToSlide(slideNum) {
+        currentSlide = slideNum;
+        if (currentSlide < 1) currentSlide = 1;
+        if (currentSlide > totalSlides) currentSlide = totalSlides;
+        updateSlideView();
+    }
+
+    // Navegação por teclado (Setas Esquerda/Direita)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+            if (currentSlide < totalSlides) changeSlide(1);
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+            if (currentSlide > 1) changeSlide(-1);
+        }
+    });
+
+    // Inicializar
+    updateSlideView();
+</script>
