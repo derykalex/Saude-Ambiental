@@ -1,286 +1,624 @@
-<!-- Top Bar / Header de Apresentação -->
-<header class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex items-center justify-between shrink-0 z-20">
-    <div class="flex items-center space-x-3">
-        <div class="bg-forest-600 text-white p-2 rounded-xl shadow-md flex items-center justify-center">
-            <i class="fa-solid fa-leaf text-base"></i>
-        </div>
-        <div>
-            <span class="text-base font-bold tracking-tight text-white block">Saúde Ambiental</span>
-            <span class="text-xs text-slate-400">Apresentação Interativa & Sustentabilidade</span>
-        </div>
-    </div>
-    <!-- Indicador de progresso numérico -->
-    <div class="bg-slate-800 border border-slate-700 px-4 py-1.5 rounded-full text-xs font-semibold text-slate-300">
-        Slide <span id="current-slide-num" class="text-forest-400">1</span> de <span id="total-slides-num">6</span>
-    </div>
-</header>
-
-<!-- Container Principal dos Slides -->
-<main class="relative flex-1 flex items-center justify-center px-4 sm:px-8 lg:px-16 overflow-hidden">
-    
-    <!-- SLIDE 1: Capa (O que é Saúde Ambiental) -->
-    <div class="slide active w-full max-w-5xl flex-col justify-center items-center text-center space-y-6" data-slide="1">
-        <div class="inline-flex items-center space-x-2 bg-forest-900/60 border border-forest-500/40 text-forest-300 text-xs font-semibold px-4 py-2 rounded-full shadow-sm">
-            <i class="fa-solid fa-seedling"></i>
-            <span>Ecologia, Bem-Estar e Qualidade de Vida</span>
-        </div>
-        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-            Saúde <span class="text-forest-500">Ambiental</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            O campo da saúde pública dedicado a avaliar, corrigir e controlar os fatores do meio físico, químico e biológico que podem exercer efeitos nocivos sobre a saúde humana e o equilíbrio ecológico.
-        </p>
-        <div class="pt-4 flex items-center justify-center space-x-6 text-xs text-slate-400 font-medium">
-            <span class="flex items-center"><i class="fa-solid fa-circle text-forest-500 text-[6px] mr-2"></i> Prevenção e Qualidade de Vida</span>
-            <span class="flex items-center"><i class="fa-solid fa-circle text-forest-500 text-[6px] mr-2"></i> Sustentabilidade Global</span>
-        </div>
-    </div>
-
-    <!-- SLIDE 2: Conceitos Chave e Desafios Globais -->
-    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="2">
-        <div class="text-center max-w-2xl mx-auto">
-            <span class="text-forest-400 text-xs font-bold tracking-widest uppercase bg-forest-900/60 px-3 py-1 rounded-full border border-forest-500/30">Fundamentos e Contexto</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Conceitos Chave e Desafios Globais</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-12 h-12 bg-forest-900/80 text-forest-400 rounded-2xl flex items-center justify-center text-xl">
-                    <i class="fa-solid fa-earth-americas"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white">Saúde Única (One Health)</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Reconhece que a saúde humana, a saúde animal e os ecossistemas são indissociáveis. O desequilíbrio em um gera crises nos demais.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center text-xl">
-                    <i class="fa-solid fa-droplet"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white">Crise Hídrica & Saneamento</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    A escassez de água potável e a ausência de saneamento adequado continuam alimentando surtos de doenças infecciosas em populações vulneráveis.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-12 h-12 bg-rose-500/20 text-rose-400 rounded-2xl flex items-center justify-center text-xl">
-                    <i class="fa-solid fa-smog"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white">Poluição Atmosférica</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Gases industriais e material particulado afetam diretamente o sistema respiratório e cardiovascular de bilhões de habitantes urbanos.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SLIDE 3: O Papel Crucial dos Profissionais da Saúde -->
-    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="3">
-        <div class="text-center max-w-2xl mx-auto">
-            <span class="text-eco-light text-xs font-bold tracking-widest uppercase bg-sky-950/60 px-3 py-1 rounded-full border border-sky-500/30">Atuação Humana e Comunitária</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">O Papel Crucial dos Profissionais da Saúde</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-12 h-12 bg-sky-500/20 text-sky-400 rounded-2xl flex items-center justify-center text-xl">
-                    <i class="fa-solid fa-user-nurse"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white">Atuação Comunitária</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Profissionais de ponta orientam famílias sobre hábitos de higiene, armazenamento seguro de água e descarte correto de resíduos domésticos.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-12 h-12 bg-amber-500/20 text-amber-400 rounded-2xl flex items-center justify-center text-xl">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white">Vigilância Epidemiológica</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Monitoram surtos de doenças transmitidas por vetores (como dengue, zika e febre amarela) associadas a mudanças climáticas e acúmulo de água.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-12 h-12 bg-forest-900 text-forest-400 rounded-2xl flex items-center justify-center text-xl">
-                    <i class="fa-solid fa-people-group"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white">Agentes Comunitários (ACS / ACE)</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    O elo vital entre a ciência sanitária e os domicílios, identificando riscos ambientais locais e promovendo saúde preventiva de base.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SLIDE 4: O Marco Global: COP30 e COP31 -->
-    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="4">
-        <div class="text-center max-w-2xl mx-auto">
-            <span class="text-amber-400 text-xs font-bold tracking-widest uppercase bg-amber-950/60 px-3 py-1 rounded-full border border-amber-500/30">Diplomacia Climática Global</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">O Marco Global: COP30 e COP31</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-800/80 border border-forest-500/40 p-6 rounded-3xl space-y-3 relative overflow-hidden">
-                <div class="absolute -right-6 -bottom-6 text-forest-900/40 text-8xl font-black pointer-events-none">30</div>
-                <div class="inline-flex items-center space-x-2 bg-forest-900 text-forest-300 text-xs font-bold px-3 py-1 rounded-lg">
-                    <i class="fa-solid fa-location-dot"></i> Belém do Pará, Brasil (2025)
-                </div>
-                <h3 class="text-xl font-bold text-white">COP30: O Clímax na Amazônia</h3>
-                <p class="text-sm text-slate-300 leading-relaxed">
-                    Realizada no coração da floresta amazônica, a COP30 colocou os povos originários, a bioeconomia, a conservação de florestas e a justiça climática no centro das negociações globais, exigindo metas concretas de transição energética.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-sky-500/40 p-6 rounded-3xl space-y-3 relative overflow-hidden">
-                <div class="absolute -right-6 -bottom-6 text-sky-900/40 text-8xl font-black pointer-events-none">31</div>
-                <div class="inline-flex items-center space-x-2 bg-sky-950 text-sky-300 text-xs font-bold px-3 py-1 rounded-lg">
-                    <i class="fa-solid fa-flag"></i> Desdobramentos e Ação Global
-                </div>
-                <h3 class="text-xl font-bold text-white">COP31: Aceleração e Financiamento</h3>
-                <p class="text-sm text-slate-300 leading-relaxed">
-                    Focada na implementação prática dos compromissos assumidos, consolidando mecanismos de financiamento verde internacional para apoiar nações em desenvolvimento na mitigação de desastres e adaptação sanitária.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SLIDE 5: Ações Práticas e Sustentabilidade -->
-    <div class="slide w-full max-w-5xl flex-col justify-center space-y-8" data-slide="5">
-        <div class="text-center max-w-2xl mx-auto">
-            <span class="text-forest-400 text-xs font-bold tracking-widest uppercase bg-forest-900/60 px-3 py-1 rounded-full border border-forest-500/30">Caminhos Práticos</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Ações Práticas e Sustentabilidade</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-10 h-10 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center font-bold text-sm">01</div>
-                <h3 class="text-base font-bold text-white">Transição Energética</h3>
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    Incentivo a fontes limpas e renováveis (solar e eólica) para reduzir a poluição do ar e mitigar o aquecimento global.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-10 h-10 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center font-bold text-sm">02</div>
-                <h3 class="text-base font-bold text-white">Saneamento Universal</h3>
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    Garantir tratamento de esgoto e água tratada para todas as comunidades como pilar fundamental de saúde pública.
-                </p>
-            </div>
-            <div class="bg-slate-800/80 border border-slate-700/80 p-6 rounded-3xl space-y-3">
-                <div class="w-10 h-10 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center font-bold text-sm">03</div>
-                <h3 class="text-base font-bold text-white">Consumo Consciente</h3>
-                <p class="text-xs text-slate-400 leading-relaxed">
-                    Prática de reciclagem, redução de plásticos descartáveis, apoio à agricultura local e conservação de recursos naturais.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SLIDE 6: Conclusão -->
-    <div class="slide w-full max-w-5xl flex-col justify-center items-center text-center space-y-6" data-slide="6">
-        <div class="w-16 h-16 bg-forest-600 text-white rounded-3xl flex items-center justify-center text-3xl shadow-xl shadow-forest-600/30">
-            <i class="fa-solid fa-flag-checkered"></i>
-        </div>
-        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            O Futuro Está em <span class="text-forest-500">Nossas Mãos</span>
-        </h2>
-        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            Cuidar da saúde ambiental é proteger a humanidade. Com a união de políticas globais (como as diretrizes da COP), atuação firme dos profissionais de saúde e engajamento comunitário, podemos garantir um planeta próspero para as próximas gerações.
-        </p>
-        <div class="pt-2 flex flex-wrap justify-center gap-4">
-            <button onclick="goToSlide(1)" class="bg-forest-600 hover:bg-forest-700 text-white font-semibold px-6 py-3 rounded-2xl transition-all shadow-lg text-sm flex items-center space-x-2">
-                <i class="fa-solid fa-rotate-right"></i>
-                <span>Reiniciar Apresentação</span>
-            </button>
-        </div>
-    </div>
-
-</main>
-
-<!-- Rodapé de Navegação da Apresentação -->
-<footer class="bg-slate-900/90 border-t border-slate-800 px-6 py-4 flex items-center justify-between shrink-0 z-20">
-    <button id="prev-btn" onclick="changeSlide(-1)" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold px-5 py-2.5 rounded-xl border border-slate-700 text-sm transition-all flex items-center space-x-2 disabled:opacity-40 disabled:cursor-not-allowed">
-        <i class="fa-solid fa-arrow-left"></i>
-        <span class="hidden sm:inline">Anterior</span>
-    </button>
-
-    <!-- Indicadores de pontos de slides -->
-    <div id="slide-dots" class="flex items-center space-x-2">
-        <!-- Gerado via JS -->
-    </div>
-
-    <button id="next-btn" onclick="changeSlide(1)" class="bg-forest-600 hover:bg-forest-700 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-all flex items-center space-x-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-md shadow-forest-600/20">
-        <span class="hidden sm:inline">Próximo</span>
-        <i class="fa-solid fa-arrow-right"></i>
-    </button>
-</footer>
-
-<!-- Script de Controle da Apresentação -->
-<script>
-    let currentSlide = 1;
-    const totalSlides = 6;
-
-    const slides = document.querySelectorAll('.slide');
-    const currentSlideNum = document.getElementById('current-slide-num');
-    const totalSlidesNum = document.getElementById('total-slides-num');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const slideDotsContainer = document.getElementById('slide-dots');
-
-    totalSlidesNum.textContent = totalSlides;
-
-    // Criar pontos indicadores
-    for (let i = 1; i <= totalSlides; i++) {
-        const dot = document.createElement('button');
-        dot.className = `w-3 h-3 rounded-full transition-all ${i === 1 ? 'bg-forest-500 w-8' : 'bg-slate-700 hover:bg-slate-600'}`;
-        dot.onclick = () => goToSlide(i);
-        slideDotsContainer.appendChild(dot);
-    }
-
-    function updateSlideView() {
-        slides.forEach((slide, index) => {
-            if (index + 1 === currentSlide) {
-                slide.classList.add('active');
-            } else {
-                slide.classList.remove('active');
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Ambiental na Amazônia | ACS Alex da Silva Oliveira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amazon: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            950: '#022c22',
+                        }
+                    }
+                }
             }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .tab-panel { display: none; animation: fadeIn 0.35s ease-in-out; }
+        .tab-panel.active { display: block; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-amazon-500 selection:text-white">
+
+    <!-- Cabeçalho Institucional Fixo -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 px-4 sm:px-8 py-4 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3.5">
+                <div class="bg-gradient-to-br from-amazon-500 to-teal-700 text-white p-3 rounded-2xl shadow-lg shadow-amazon-500/20 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-earth-americas text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-lg sm:text-xl font-black tracking-tight text-white block">Saúde Ambiental & Território</span>
+                    <span class="text-xs text-amazon-400 font-medium">ACS Alex da Silva Oliveira • U.S. Jaderlândia & ESF Nova Conquista • Paragominas/PA</span>
+                </div>
+            </div>
+
+            <!-- Navegação Interna Direta -->
+            <nav class="flex flex-wrap items-center justify-center gap-1.5 text-xs font-semibold">
+                <a href="#conceitos" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Conceitos & Histórico</a>
+                <a href="#saneamento" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saneamento & Vetores</a>
+                <a href="#vigilancia" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Vigilância (SUS)</a>
+                <a href="#clima-cop" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Clima & COP30/31</a>
+                <a href="#ferramentas" class="px-3 py-2 rounded-xl bg-amazon-600 hover:bg-amazon-700 text-white shadow-md transition-all">Ações de Campo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24 flex-grow w-full">
+
+        <!-- HERO SECTION: Apresentação e Vídeo Institucional -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 bg-amazon-950 border border-amazon-500/40 text-amazon-300 text-xs font-bold px-4 py-2 rounded-full">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>Vigilância em Saúde Ambiental • Atenção Primária (SUS)</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                    Proteger o Ambiente é <span class="text-amazon-400">Promover Saúde</span> na Amazônia
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Portal educativo e operacional desenvolvido pelo Agente Comunitário de Saúde <strong>Alex da Silva Oliveira</strong>. Um espaço dedicado à prevenção de agravos ambientais, controle de vetores, segurança hídrica e educação popular nos bairros <strong>Jaderlândia</strong> e <strong>Nova Conquista</strong> (Paragominas/PA).
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#ferramentas" class="bg-amazon-600 hover:bg-amazon-500 text-white font-bold px-6 py-3.5 rounded-2xl transition-all shadow-lg shadow-amazon-600/25 text-sm flex items-center space-x-2">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <span>Checklist & Mural de Campo</span>
+                    </a>
+                    <a href="#saneamento" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-6 py-3.5 rounded-2xl border border-slate-700 transition-all text-sm">
+                        Explorar Eixos Ambientais
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card Multimídia em Destaque -->
+            <div class="lg:col-span-5">
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-4 shadow-2xl space-y-4">
+                    <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-950 border border-slate-800">
+                        <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ChfFg3-qTM" title="Saúde Ambiental: Conceitos e Riscos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="px-2 pb-1 flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-sm font-bold text-white">Saúde Ambiental: Conceitos e Riscos no Território</h3>
+                            <p class="text-xs text-slate-400 mt-1">Material audiovisual de apoio à educação permanente de ACS, ACE e comunidade.</p>
+                        </div>
+                        <span class="bg-amazon-950 text-amazon-400 border border-amazon-500/30 text-[10px] font-bold px-2.5 py-1 rounded-lg shrink-0">Vídeo Aula</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: Conceitos Fundamentais e Marcos Históricos -->
+        <section id="conceitos" class="space-y-10 scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-amazon-400 text-xs font-bold tracking-widest uppercase bg-amazon-950 px-3.5 py-1.5 rounded-full border border-amazon-500/30">Fundamentos Científicos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">O que é Saúde Ambiental?</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    Segundo a Organização Mundial da Saúde (OMS), a Saúde Ambiental compreende todos os aspectos da saúde humana e qualidade de vida determinados por fatores físicos, químicos, biológicos, sociais e psicológicos no meio ambiente.
+                </p>
+            </div>
+
+            <!-- Linha do Tempo das Conferências e Marcos Legais -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-900/90 border border-slate-800 hover:border-amazon-500/50 p-6 rounded-3xl space-y-3 transition-all">
+                    <div class="text-amazon-400 font-black text-2xl">1978 • 1986</div>
+                    <h3 class="text-base font-bold text-white">Alma-Ata & Carta de Ottawa</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Consolidação da Atenção Primária à Saúde e da Promoção da Saúde, definindo a criação de <strong>ambientes favoráveis à saúde</strong> e o empoderamento comunitário.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/90 border border-slate-800 hover:border-amazon-500/50 p-6 rounded-3xl space-y-3 transition-all">
+                    <div class="text-teal-400 font-black text-2xl">1988 • 1990</div>
+                    <h3 class="text-base font-bold text-white">Constituição & Lei 8.080 (SUS)</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Os Artigos 196, 200 e 225 garantem o meio ambiente equilibrado como direito fundamental e atribuem ao SUS a colaboração na proteção ambiental e saneamento.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/90 border border-slate-800 hover:border-amazon-500/50 p-6 rounded-3xl space-y-3 transition-all">
+                    <div class="text-sky-400 font-black text-2xl">1991 • 1992</div>
+                    <h3 class="text-base font-bold text-white">Sundsvall & Rio-92 (Agenda 21)</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        A Conferência de Sundsvall integra saúde e ambiente nas dimensões física, social e econômica. A Rio-92 coloca o ser humano no centro do desenvolvimento sustentável.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/90 border border-slate-800 hover:border-amazon-500/50 p-6 rounded-3xl space-y-3 transition-all">
+                    <div class="text-amber-400 font-black text-2xl">2007 • 2010</div>
+                    <h3 class="text-base font-bold text-white">Marco do Saneamento & PNRS</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Leis nº 11.445/07 e nº 12.305/10 estabelecem as diretrizes nacionais de saneamento básico e a Política Nacional de Resíduos Sólidos (erradicação de lixões).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: Os 4 Eixos do Saneamento Básico & Doenças Relacionadas (Abas Interativas) -->
+        <section id="saneamento" class="space-y-8 scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-sky-400 text-xs font-bold tracking-widest uppercase bg-sky-950 px-3.5 py-1.5 rounded-full border border-sky-500/30">Infraestrutura e Prevenção</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Saneamento Básico e Riscos Epidemiológicos</h2>
+                <p class="text-slate-400 text-sm">A interrupção das vias de transmissão de doenças depende diretamente dos quatro pilares do saneamento ambiental. Clique nas abas abaixo para explorar:</p>
+            </div>
+
+            <!-- Botões das Abas -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
+                <button onclick="openSaneamentoTab('agua', this)" class="san-btn px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-sky-600 text-white shadow-lg transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>1. Água Potável</span>
+                </button>
+                <button onclick="openSaneamentoTab('esgoto', this)" class="san-btn px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-faucet-drip"></i>
+                    <span>2. Esgotamento Sanitário</span>
+                </button>
+                <button onclick="openSaneamentoTab('residuos', this)" class="san-btn px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-recycle"></i>
+                    <span>3. Resíduos Sólidos</span>
+                </button>
+                <button onclick="openSaneamentoTab('drenagem', this)" class="san-btn px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <span>4. Drenagem Pluvial</span>
+                </button>
+            </div>
+
+            <!-- Conteúdo das Abas -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-xl">
+                <!-- Aba Água -->
+                <div id="panel-agua" class="tab-panel active grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h3 class="text-2xl font-bold text-sky-400">Abastecimento de Água Potável (Vigiágua)</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            A água contaminada é veículo de patógenos (via feco-oral) e substâncias químicas. O monitoramento domiciliar realizado pelo ACS verifica a limpeza de caixas d'água e orienta o tratamento intradomiciliar.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-rose-400 uppercase block mb-1">Principais Agravos</span>
+                                <p class="text-xs text-slate-400">Diarreias agudas, hepatite A, giardíase, amebíase, febre tifoide e parasitoses intestinais.</p>
+                            </div>
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-amazon-400 uppercase block mb-1">Ação do ACS no Território</span>
+                                <p class="text-xs text-slate-400">Distribuição e orientação do uso de <strong>Hipoclorito de Sódio a 2,5%</strong> (2 gotas por litro de água, aguardar 30 min) e vedação de reservatórios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 h-60 rounded-2xl overflow-hidden border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=800&q=80" alt="Água Potável" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Aba Esgoto -->
+                <div id="panel-esgoto" class="tab-panel grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h3 class="text-2xl font-bold text-teal-400">Esgotamento Sanitário Adequado</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            A ausência de coleta e tratamento de esgotos (valas a céu aberto e fossas rudimentares) contamina o solo e o lençol freático, expondo crianças e famílias a infecções graves.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-rose-400 uppercase block mb-1">Principais Agravos</span>
+                                <p class="text-xs text-slate-400">Ascaridíase, ancilostomíase (amarelão), esquistossomose, teníase/cisticercose e proliferação de vetores.</p>
+                            </div>
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-amazon-400 uppercase block mb-1">Ação do ACS no Território</span>
+                                <p class="text-xs text-slate-400">Mapeamento de áreas com esgoto a céu aberto, orientação sobre higiene pessoal (lavagem das mãos) e uso de calçados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 h-60 rounded-2xl overflow-hidden border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Higiene e Saneamento" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Aba Resíduos -->
+                <div id="panel-residuos" class="tab-panel grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h3 class="text-2xl font-bold text-amber-400">Manejo de Resíduos Sólidos e Lixo Urbano</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            O descarte irregular de lixo doméstico e entulhos cria abrigo e alimento para vetores mecânicos e biológicos, além de contaminar o solo com chorume e gases tóxicos quando queimado.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-rose-400 uppercase block mb-1">Vetores & Doenças</span>
+                                <p class="text-xs text-slate-400"><strong>Mosquitos:</strong> Dengue, Zika, Chikungunya, Malária. <strong>Ratos:</strong> Leptospirose. <strong>Moscas/Baratas:</strong> Salmonelose e disenterias.</p>
+                            </div>
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-amazon-400 uppercase block mb-1">Ação do ACS & ACE</span>
+                                <p class="text-xs text-slate-400">Eliminação de recipientes que acumulam água (pneus, garrafas, pratos de plantas), incentivo à coleta seletiva e combate às queimadas urbanas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 h-60 rounded-2xl overflow-hidden border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Reciclagem e Resíduos" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Aba Drenagem -->
+                <div id="panel-drenagem" class="tab-panel grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h3 class="text-2xl font-bold text-indigo-400">Drenagem Pluvial e Prevenção de Enchentes</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Na Amazônia, o período chuvoso intenso exige atenção redobrada aos pontos de alagamento, obstrução de bueiros por lixo e riscos de contato com águas contaminadas.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-rose-400 uppercase block mb-1">Riscos em Inundações</span>
+                                <p class="text-xs text-slate-400">Surtos de <strong>Leptospirose</strong> (urina de roedores misturada à água da enxurrada), dermatites, acidentes com animais peçonhentos e contaminação de poços.</p>
+                            </div>
+                            <div class="bg-slate-950/70 border border-slate-800 p-4 rounded-2xl">
+                                <span class="text-xs font-bold text-amazon-400 uppercase block mb-1">Protocolo Pós-Enchente</span>
+                                <p class="text-xs text-slate-400">Orientar o descarte de alimentos atingidos pela água, desinfecção de pisos e paredes com água sanitária e busca imediata pela UBS em caso de febre.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 h-60 rounded-2xl overflow-hidden border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&w=800&q=80" alt="Chuvas e Drenagem" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: Vigilância em Saúde Ambiental no SUS & Atuação ACS/ACE -->
+        <section id="vigilancia" class="space-y-10 scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-amber-400 text-xs font-bold tracking-widest uppercase bg-amber-950 px-3.5 py-1.5 rounded-full border border-amber-500/30">Integração no Território</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Vigilância Ambiental e o Trabalho do ACS & ACE</h2>
+                <p class="text-slate-400 text-sm">A integração entre a Atenção Básica (Estratégia Saúde da Família) e a Vigilância em Saúde garante respostas rápidas aos riscos ambientais.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-3xl space-y-4">
+                    <div class="w-12 h-12 bg-amazon-950 text-amazon-400 border border-amazon-500/30 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Mapeamento de Pontos Estratégicos</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Identificação e monitoramento quinzenal de borracharias, ferros-velhos, terrenos baldios, pontos de alagamento e áreas sem cobertura de rede de água nos bairros Jaderlândia e Nova Conquista.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-3xl space-y-4">
+                    <div class="w-12 h-12 bg-sky-950 text-sky-400 border border-sky-500/30 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-lungs-virus"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Programas Vigiar & Vigisolo</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Acompanhamento de populações expostas à poluição atmosférica (fumaça de queimadas e poeira) e vigilância contra contaminação química do solo e agrotóxicos na zona urbana e rural.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-3xl space-y-4">
+                    <div class="w-12 h-12 bg-rose-950 text-rose-400 border border-rose-500/30 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Saúde Única (One Health) & Zoonoses</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Integração entre saúde humana, animal e ambiental: mobilização para vacinação antirrábica de cães e gatos, guarda responsável e prevenção da leishmaniose visceral e tegumentar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: Clima, Amazônia, COP30/COP31 e Programa Saúde na Escola (PSE) -->
+        <section id="clima-cop" class="bg-gradient-to-br from-amazon-950/90 via-slate-900 to-slate-900 border border-amazon-500/30 rounded-3xl p-6 sm:p-12 shadow-2xl space-y-8 scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="inline-flex items-center space-x-2 bg-amazon-900/80 text-amazon-300 text-xs font-bold px-3 py-1 rounded-full border border-amazon-500/40">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Agenda Climática Global & Educação Popular</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-black text-white">O Pará no Centro do Debate Climático: COP30 & COP31</h2>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        As mudanças climáticas intensificam ondas de calor, secas severas e enchentes, alterando o ciclo de reprodução de vetores e afetando diretamente a segurança alimentar e respiratória das famílias amazônicas.
+                    </p>
+                    <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 pt-2">
+                        <li class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-circle-check text-amazon-400 mt-1"></i>
+                            <span><strong>Programa Saúde na Escola (PSE):</strong> Oficinas educativas sobre lavagem das mãos, água potável, combate ao mosquito e consumo sustentável nas escolas de Paragominas[cite: 278].</span>
+                        </li>
+                        <li class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-circle-check text-amazon-400 mt-1"></i>
+                            <span><strong>Justiça Socioambiental:</strong> Proteção prioritária às crianças, idosos, gestantes e famílias em áreas de maior vulnerabilidade ambiental.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vídeo Complementar: Documentário Saneamento / Meio Ambiente -->
+                <div class="lg:col-span-5 space-y-3">
+                    <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-xl border border-slate-700 bg-slate-950">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/UwmLRxdEahc" title="Documentário Saneamento Básico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center text-xs text-slate-400">Documentário: Desafios do Saneamento Básico e Impactos na Saúde Pública[cite: 309].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: Ferramentas Práticas do ACS (Checklist + Mural de Fotos e Vídeos) -->
+        <section id="ferramentas" class="space-y-12 scroll-mt-24">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="text-amazon-400 text-xs font-bold tracking-widest uppercase bg-amazon-950 px-3.5 py-1.5 rounded-full border border-amazon-500/30">Operacionalização no Território</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ferramentas de Campo do Agente de Saúde</h2>
+                <p class="text-slate-400 text-sm">Acompanhe as metas de orientação domiciliar e registre as ações ambientais realizadas na comunidade.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Coluna Esquerda: Checklist Interativo -->
+                <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Checklist da Visita Ambiental</h3>
+                                <p class="text-xs text-slate-400">Roteiro preventivo para o ACS</p>
+                            </div>
+                            <span class="bg-amazon-950 border border-amazon-500/40 text-amazon-400 text-xs font-extrabold px-3 py-1.5 rounded-xl">
+                                <span id="check-count">0</span> / 5
+                            </span>
+                        </div>
+
+                        <div class="space-y-3 text-xs sm:text-sm">
+                            <label class="flex items-start space-x-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-amazon-500/50 cursor-pointer transition-all">
+                                <input type="checkbox" class="env-check mt-1 w-4 h-4 accent-amazon-500 rounded cursor-pointer">
+                                <div>
+                                    <span class="font-bold text-slate-200 block">Verificar vedação de caixas d'água e tonéis</span>
+                                    <span class="text-xs text-slate-400">Prevenir postura de ovos do <em>Aedes aegypti</em>.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-amazon-500/50 cursor-pointer transition-all">
+                                <input type="checkbox" class="env-check mt-1 w-4 h-4 accent-amazon-500 rounded cursor-pointer">
+                                <div>
+                                    <span class="font-bold text-slate-200 block">Orientar uso do Hipoclorito de Sódio 2,5%</span>
+                                    <span class="text-xs text-slate-400">Garantir água segura em domicílios sem rede tratada[cite: 326].</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-amazon-500/50 cursor-pointer transition-all">
+                                <input type="checkbox" class="env-check mt-1 w-4 h-4 accent-amazon-500 rounded cursor-pointer">
+                                <div>
+                                    <span class="font-bold text-slate-200 block">Inspecionar quintais e calhas</span>
+                                    <span class="text-xs text-slate-400">Eliminar garrafas, pneus e recipientes com água parada.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-amazon-500/50 cursor-pointer transition-all">
+                                <input type="checkbox" class="env-check mt-1 w-4 h-4 accent-amazon-500 rounded cursor-pointer">
+                                <div>
+                                    <span class="font-bold text-slate-200 block">Orientar acondicionamento correto do lixo</span>
+                                    <span class="text-xs text-slate-400">Evitar queima de resíduos e obstrução de bueiros[cite: 321, 323].</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start space-x-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-amazon-500/50 cursor-pointer transition-all">
+                                <input type="checkbox" class="env-check mt-1 w-4 h-4 accent-amazon-500 rounded cursor-pointer">
+                                <div>
+                                    <span class="font-bold text-slate-200 block">Checar vacinação antirrábica de pets</span>
+                                    <span class="text-xs text-slate-400">Controle de zoonoses e guarda responsável[cite: 318, 319].</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="check-feedback" class="hidden bg-amazon-950/80 border border-amazon-500/40 text-amazon-300 p-3.5 rounded-2xl text-xs font-medium text-center">
+                        <i class="fa-solid fa-circle-check mr-1.5"></i> Excelente! Roteiro completo de vigilância ambiental concluído.
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Formulário de Registro de Fotos e Vídeos -->
+                <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                    <div class="border-b border-slate-800 pb-4">
+                        <h3 class="text-lg font-bold text-white">Registrar Ação Ambiental (Fotos & Vídeos)</h3>
+                        <p class="text-xs text-slate-400">Adicione registros de mutirões, palestras nas escolas ou visitas na Jaderlândia e Nova Conquista.</p>
+                    </div>
+
+                    <form id="relatorio-form" onsubmit="publicarAcaoAmbiental(event)" class="space-y-4 text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-slate-300 mb-1.5">Título da Atividade</label>
+                                <input type="text" id="titulo-acao" required placeholder="Ex: Mutirão Educativo na Escola" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amazon-500">
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-300 mb-1.5">Localidade / Unidade</label>
+                                <select id="local-acao" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amazon-500">
+                                    <option value="U.S. Jaderlândia">U.S. Jaderlândia</option>
+                                    <option value="ESF Nova Conquista">ESF Nova Conquista</option>
+                                    <option value="Escola Municipal (PSE)">Escola Municipal (PSE)</option>
+                                    <option value="Ação Conjunta ACS/ACE">Ação Conjunta ACS/ACE</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-slate-300 mb-1.5">Link da Foto ou Vídeo do YouTube (Opcional)</label>
+                            <input type="url" id="midia-acao" placeholder="https://www.youtube.com/watch?v=... ou link da imagem" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amazon-500">
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-slate-300 mb-1.5">Relato da Ação Realizada</label>
+                            <textarea id="desc-acao" rows="3" required placeholder="Descreva as orientações repassadas aos moradores e os resultados alcançados..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amazon-500"></textarea>
+                        </div>
+
+                        <div class="flex justify-end pt-1">
+                            <button type="submit" class="bg-amazon-600 hover:bg-amazon-500 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg flex items-center space-x-2">
+                                <i class="fa-solid fa-plus-circle"></i>
+                                <span>Publicar no Mural Ambiental</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Mural Dinâmico de Ações Ambientais -->
+            <div class="space-y-6 pt-4">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <h3 class="text-xl font-bold text-white flex items-center">
+                        <i class="fa-solid fa-photo-film text-amazon-400 mr-2.5"></i> Mural de Ações em Saúde Ambiental
+                    </h3>
+                    <span class="text-xs text-slate-400">Registros: <strong id="mural-total" class="text-amazon-400">2</strong></span>
+                </div>
+
+                <div id="mural-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card Exemplo 1 -->
+                    <article class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Ação Ambiental" class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 bg-amazon-950/90 text-amazon-300 border border-amazon-500/40 text-[10px] font-bold px-3 py-1 rounded-full">U.S. Jaderlândia</span>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Vigilância de Águas e Combate ao Aedes</h4>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Visita domiciliar educativa com orientação sobre limpeza de reservatórios, entrega de hipoclorito de sódio e eliminação de criadouros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3.5 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+                            <span><i class="fa-solid fa-user-nurse text-amazon-400 mr-1.5"></i> ACS Alex da Silva Oliveira</span>
+                            <span>Paragominas/PA</span>
+                        </div>
+                    </article>
+
+                    <!-- Card Exemplo 2 -->
+                    <article class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Educação Ambiental" class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 bg-teal-950/90 text-teal-300 border border-teal-500/40 text-[10px] font-bold px-3 py-1 rounded-full">ESF Nova Conquista</span>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Roda de Conversa: Destino Correto do Lixo</h4>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Mobilização comunitária para evitar o descarte irregular de resíduos sólidos em terrenos baldios e prevenir doenças transmitidas por vetores.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-3.5 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+                            <span><i class="fa-solid fa-user-nurse text-amazon-400 mr-1.5"></i> ACS Alex da Silva Oliveira</span>
+                            <span>Paragominas/PA</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Institucional -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8 px-4 sm:px-8 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-bold text-slate-200">Portal de Saúde Ambiental • ACS Alex da Silva Oliveira</p>
+                <p class="text-slate-500 mt-0.5">U.S. Jaderlândia & ESF Nova Conquista • Paragominas, Pará • Sistema Único de Saúde (SUS)</p>
+            </div>
+            <div class="text-amazon-400 font-semibold">
+                <i class="fa-solid fa-leaf mr-1.5"></i> Saúde, Ambiente e Sustentabilidade
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Controle das Abas de Saneamento
+        function openSaneamentoTab(tabName, btnElement) {
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            document.querySelectorAll('.san-btn').forEach(btn => {
+                btn.className = "san-btn px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition-all flex items-center space-x-2";
+            });
+
+            document.getElementById('panel-' + tabName).classList.add('active');
+            btnElement.className = "san-btn px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-sky-600 text-white shadow-lg transition-all flex items-center space-x-2";
+        }
+
+        // Controle do Checklist Interativo
+        const checks = document.querySelectorAll('.env-check');
+        const checkCount = document.getElementById('check-count');
+        const checkFeedback = document.getElementById('check-feedback');
+
+        checks.forEach(item => {
+            item.addEventListener('change', () => {
+                const totalChecked = document.querySelectorAll('.env-check:checked').length;
+                checkCount.textContent = totalChecked;
+                if (totalChecked === checks.length) {
+                    checkFeedback.classList.remove('hidden');
+                } else {
+                    checkFeedback.classList.add('hidden');
+                }
+            });
         });
 
-        currentSlideNum.textContent = currentSlide;
+        // Publicação Dinâmica no Mural Ambiental
+        let totalRegistros = 2;
+        function publicarAcaoAmbiental(event) {
+            event.preventDefault();
+            const titulo = document.getElementById('titulo-acao').value;
+            const local = document.getElementById('local-acao').value;
+            const midia = document.getElementById('midia-acao').value.trim();
+            const desc = document.getElementById('desc-acao').value;
+            const mural = document.getElementById('mural-grid');
 
-        // Atualizar botões
-        prevBtn.disabled = currentSlide === 1;
-        nextBtn.disabled = currentSlide === totalSlides;
+            let mediaTag = `<img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80" alt="${titulo}" class="w-full h-full object-cover">`;
 
-        // Atualizar pontos
-        const dots = slideDotsContainer.children;
-        for (let i = 0; i < dots.length; i++) {
-            if (i + 1 === currentSlide) {
-                dots[i].className = 'w-8 h-3 rounded-full bg-forest-500 transition-all';
-            } else {
-                dots[i].className = 'w-3 h-3 rounded-full bg-slate-700 hover:bg-slate-600 transition-all';
+            if (midia) {
+                if (midia.includes('youtube.com') || midia.includes('youtu.be')) {
+                    let embedUrl = midia;
+                    if (midia.includes('watch?v=')) {
+                        const videoId = midia.split('watch?v=')[1].split('&')[0];
+                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                    } else if (midia.includes('youtu.be/')) {
+                        const videoId = midia.split('youtu.be/')[1].split('?')[0];
+                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                    }
+                    mediaTag = `<iframe class="w-full h-full" src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                } else {
+                    mediaTag = `<img src="${midia}" alt="${titulo}" class="w-full h-full object-cover">`;
+                }
             }
+
+            const article = document.createElement('article');
+            article.className = "bg-slate-900 border border-amazon-500/40 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between";
+            article.innerHTML = `
+                <div>
+                    <div class="h-48 bg-slate-950 relative overflow-hidden">
+                        ${mediaTag}
+                        <span class="absolute top-3 left-3 bg-amazon-950/90 text-amazon-300 border border-amazon-500/40 text-[10px] font-bold px-3 py-1 rounded-full">${local}</span>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="text-base font-bold text-white">${titulo}</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">${desc}</p>
+                    </div>
+                </div>
+                <div class="px-5 py-3.5 bg-slate-950/50 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+                    <span><i class="fa-solid fa-user-nurse text-amazon-400 mr-1.5"></i> ACS Alex da Silva Oliveira</span>
+                    <span>Agora mesmo</span>
+                </div>
+            `;
+
+            mural.prepend(article);
+            totalRegistros++;
+            document.getElementById('mural-total').textContent = totalRegistros;
+            document.getElementById('relatorio-form').reset();
         }
-    }
-
-    function changeSlide(direction) {
-        currentSlide += direction;
-        if (currentSlide < 1) currentSlide = 1;
-        if (currentSlide > totalSlides) currentSlide = totalSlides;
-        updateSlideView();
-    }
-
-    function goToSlide(slideNum) {
-        currentSlide = slideNum;
-        if (currentSlide < 1) currentSlide = 1;
-        if (currentSlide > totalSlides) currentSlide = totalSlides;
-        updateSlideView();
-    }
-
-    // Navegação por teclado (Setas Esquerda/Direita)
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight' || e.key === 'PageDown') {
-            if (currentSlide < totalSlides) changeSlide(1);
-        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
-            if (currentSlide > 1) changeSlide(-1);
-        }
-    });
-
-    // Inicializar
-    updateSlideView();
-</script>
+    </script>
+</body>
+</html>
